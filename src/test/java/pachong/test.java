@@ -20,7 +20,10 @@ public class test {
 	      // 现在创建 matcher 对象
 	      Matcher m = r.matcher(line);
 	      System.out.println(m.find());
-		
+	      System.out.println(this.getClass().getResource(""));
+	      System.out.println(this.getClass().getResource("/"));
+	      System.out.println(this.getClass().getClassLoader().getResource(""));
+	      System.out.println(this.getClass().getResourceAsStream("log4j.properties"));
 //		String str="中文字符";
 //		try {
 //			String encode = URLEncoder.encode(str,"UTF-8");//编码
